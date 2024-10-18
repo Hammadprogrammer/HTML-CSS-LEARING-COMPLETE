@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Parking Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow-x: hidden;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .a {
+            background-color: white;
+            width: 100vw;
+            height: 10vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+        }
+
+        li {
+            padding: 20px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        li:hover {
+            color: tomato;
+        }
+
+        .b, .c {
+            padding: 8px 16px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .b {
+            background-color: white;
+            color: black;
+        }
+
+        .b:hover {
+            color: tomato;
+            border: 1px solid tomato;
+        }
+
+        .c {
+            background-color: tomato;
+            color: white;
+        }
+
+        .c:hover {
+            background-color: darkred;
+        }
+
+        /* Step 2 - Main Section */
+        .step2 {
+            padding: 20px;
+            background-color: rgb(224, 233, 233);
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .step2 h1 {
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        .step2 p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .step2 input {
+            width: 100%;
+            height: 45px;
+            font-size: 18px;
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+
+        .input5 {
+            width: 100%;
+            height: 50px;
+            background-color: tomato;
+            border-radius: 25px;
+            color: white;
+            font-size: 20px;
+            border: solid tomato;
+            cursor: pointer;
+        }
+
+        .input5:hover {
+            background-color: darkred;
+        }
+
+        /* Step 3 - We are everywhere */
+        .step3 {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        /* Cards for Parking Types */
+        .parking-cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .parking-card {
+            width: 30%;
+            background-color: white;
+            border-radius: 15px;
+            margin: 20px 0;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .parking-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .parking-card h1 {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 20px;
+        }
+
+        .parking-card button {
+            display: block;
+            width: 80%;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: tomato;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .parking-card button:hover {
+            background-color: darkred;
+        }
+
+        /* Footer Section */
+        .step7 {
+            background-color: tomato;
+            padding: 50px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .step7 h1 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .step7 p {
+            font-size: 18px;
+        }
+
+        .footer-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+
+        .footer-grid .footer-card {
+            width: 25%;
+            background-color: white;
+            margin: 20px;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer-grid .footer-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .footer-grid .footer-card h1 {
+            margin: 15px 0;
+            font-size: 18px;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media (max-width: 1024px) {
+            .a {
+                flex-direction: column;
+                height: auto;
+            }
+
+            ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .step2 input, .input5 {
+                width: 90%;
+            }
+
+            .parking-card {
+                width: 45%;
+            }
+
+            .footer-grid .footer-card {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .step2 {
+                padding: 10px;
+            }
+
+            .parking-card {
+                width: 100%;
+            }
+
+            .footer-grid .footer-card {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .step2 h1 {
+                font-size: 25px;
+            }
+
+            .step2 input, .input5 {
+                width: 100%;
+                height: 40px;
+                font-size: 16px;
+            }
+
+            .parking-card h1 {
+                font-size: 18px;
+            }
+
+            .parking-card button {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a">
+        <img src="spotfinder.png" alt="" width="200px" height="50px" class="img">
+        <ul>
+            <li>Home</li>
+            <li>Feature</li>
+            <li>Blog</li>
+            <li>Become a partnership</li>
+        </ul>
+        <div>
+            <button class="b">Login</button>
+            <button class="c">Register</button>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="step2">
+        <img src="girl.png" alt="" class="girl">
+        <h1>Parking <span>Simplified</span></h1>
+        <p>Easily Find a Parking Space now!</p>
+        <input type="text" placeholder="Your Location"> <br>
+        <input type="text" placeholder="Select Vehicle Category" class="input2"> <br>
+        <input type="text" placeholder="Check-in" class="input3">
+        <input type="text" placeholder="Check-out" class="input4"> <br>
+        <button class="input5">Search Parking Spaces</button>
+    </div>
+
+    <div class="step3">
+        <h1>We are everywhere!</h1>
+        <p>Find a new home for your car.</p>
+    </div>
+
+    <div class="parking-cards">
+        <div class="parking-card">
+            <img src="car.jpg" alt="City Parking">
+            <h1>City Parking</h1>
+            <button>Find Parking</button>
+        </div>
+        <div class="parking-card">
+            <img src="truk.jpg" alt="Semi Truck Parking">
+            <h1>Semi Truck Parking</h1>
+            <button>Find Parking</button>
+        </div>
+        <div class="parking-card">
+            <img src="air.jpg" alt="Airport Parking">
+            <h1>Airport Parking</h1>
+            <button>Find Parking</button>
+        </div>
+    </div>
+
+    <div class="step7">
+        <h1>Why Spot Finder?</h1>
+        <p>We understand the pain of finding the right spot where your car feels home. Handicap friendly spots, diligent customer support, we aim to comfort you with the nearest parking spot!</p>
+
+        <div class="footer-grid">
+            <div class="footer-card">
+                <img src="clock.png" alt="clock">
+                <h1>Quick and Easy Booking</h1>
+            </div>
+            <div class="footer-card">
+                <img src="emoji.jpg" alt="emoji">
+                <h1>Happy Customers</h1>
+            </div>

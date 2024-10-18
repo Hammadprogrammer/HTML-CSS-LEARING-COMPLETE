@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .start img{
+width: 100vw;
+height: 100vh;
+    }
+   
+    .start h1{
+        position: absolute;
+        top: 50px;
+        left: 100px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        letter-spacing: -2px;
+        color: white;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    ul{
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+        margin-right: 100px;
+        position: absolute;
+        top: 70px;
+        left: 600px;
+    }
+    li{
+      margin-left: 20px;
+    
+      color: rgb(255, 255, 255);
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    li:hover{
+        color: black;
+    }
+    .call{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 55px;
+       right: 300px;
+    
+       border-radius: 50px;
+       color: white;
+    }
+    p{
+        position: absolute;
+        right: 200px;
+        top: 60px;
+        color: white;
+    }
+    h2{
+        position: absolute;
+        right: 250px;
+        top: 200px;
+        font-size: 60px;
+        color: white;
+  animation-name: example;
+  animation-duration: 3s;
+}
+@keyframes example {
+    0%   { right:0px; }
+  75%  { right:250px;}
+}
+    .start .para{
+        position: absolute;
+        right: 180px;
+        top:450px;
+      
+        font-size: 20px;
+        color: white;
+    }
+    .our{
+        position: absolute;
+        right: 510px;
+        top:600px;
+        font-size: 15px;
+        width: 170px;
+        height: 60px;
+        color: white;
+        background-color: rgb(19, 134, 201);
+        border:rgb(19, 134, 201);;
+        border-radius: 7px;
+        
+    }
+    .us{
+        position: absolute;
+        right: 335px;
+        top:600px;
+        font-size: 15px;
+        width: 170px;
+        height: 60px;
+        color: white;
+       border-radius: 7px;
+       background-color: rgb(39, 36, 36)
+              
+    }
+    .us:hover{
+        background-color: white;
+        color: black;
+    }  .men{
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(41, 39, 39);
+       position: absolute;
+       top:1000px;
+       
+    }
+    .men h1{
+        position: absolute;
+        top: 100px;
+        left: 120px;
+        font-size: 50px;
+        color: white;} 
+
+</style>
+<body>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <body>
+        <div class="start">
+            <img src="page" alt="">
+            <h1>Solicitor</h1>
+    
+            <ul>
+                <li>Home</li>
+                <li>Practicing Area</li>
+                <li>Service</li>
+                <li>About</li>
+                <li>Contact us</li>
+            </ul>
+            <ion-icon name="call" class="call"></ion-icon>
+            <p>123-489-9381</p>
+            <h2>Meet all your <br> investigative and <br> litigation needs</h2>
+            <p class="para">Lorem ipsum dolor sit amet consectetur  Voluptate a cupiditate <br>provident dolor veritatis? Quis.</p>
+            <button class="our">Our Service ></button>
+            <button class="us">Contact us ></button>
+        </div>
+    
+ 
+
+</body>
+</html>
